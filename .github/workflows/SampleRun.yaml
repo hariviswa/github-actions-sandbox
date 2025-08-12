@@ -1,0 +1,13 @@
+name: Hello World Scheduled Job
+
+on:
+  schedule:
+    - cron: '58 7 * * *'  # Runs daily at 9:00 AM IST
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello, Hari! Your scheduled job ran successfully 🎉"
